@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div class="product_detail">
+      <form action='/users/insert' method="POST">
+        <label> Shop_name </label>
+        <input type="text" placeholder="Enter Shop Name" name="shop_name">
+        <label> Product_Name </label>
+        <input type="text" placeholder="Enter Product Name" name="product_name">
+        <label> Price </label>
+        <input type="text" placeholder="Enter Price" name="price">
+        <label> Amount </label>
+        <input type="text" placeholder="Enter Amount" name="amount">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
